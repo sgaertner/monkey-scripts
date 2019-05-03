@@ -7,7 +7,7 @@
 // @match        *://www.spiegel.de/*
 // @grant        none
 // @require      http://code.jquery.com/jquery-3.4.1.min.js
-// @update       https://raw.githubusercontent.com/sgaertner/monkey-scripts/master/spon.js
+// @updateURL    https://raw.githubusercontent.com/sgaertner/monkey-scripts/master/spon.js
 // ==/UserScript==
 
 (function() {
