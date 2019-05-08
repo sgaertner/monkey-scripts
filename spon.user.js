@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Spiegel
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  try to take over the world!
 // @author       You
 // @match        *://www.spiegel.de/*
@@ -13,6 +13,8 @@
 
 (function() {
     'use strict';
+
+    var $ = jQuery;
 
     function plus() {
         var $l = $('.laterpay-under-overlay');
@@ -52,7 +54,7 @@
         $('.article-comments-box').remove();
 
         // mark Bento
-        $('a[href^="http://www.bento.de/"]').find('*').andSelf().attr('style', 'color:#e167e5');
+        $('a[href^="http://www.bento.de/"],a[href^="https://www.bento.de/"]').find('*').addBack().attr('style', 'color:#e167e5');
     }
 
     window.setTimeout(plus, 1000);
