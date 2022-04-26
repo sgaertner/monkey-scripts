@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Golem
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.golem.de/*
@@ -22,6 +22,11 @@
 //        $('.iqadmarker').parent().remove();
         $('#iqdSitebar').remove();
         $('.plista_widget_underArticle').remove();
+        $('.ob-smartfeed-wrapper').remove();
+        $('.wraptusplit').remove();
+        $('#job-market').remove();
+        $('#seminars').remove();
+        $('.gbox_affiliate').remove();
 
         $('section#comments').remove();
     }
